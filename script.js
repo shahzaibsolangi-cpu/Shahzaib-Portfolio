@@ -47,3 +47,9 @@ const observer = new IntersectionObserver(
 sections.forEach(function (section) {
     observer.observe(section);
 });
+const menuButton = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+
+menuButton.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+});
